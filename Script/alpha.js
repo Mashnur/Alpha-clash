@@ -56,6 +56,9 @@ function continuegame(){
 function gameover(){
  HideElementByid('play-screen')
  ShowElementById('score')
+ const lastscore =gettextelementbyid('current-score')
+ console.log(lastscore);
+ setelementbyid('game-score',lastscore)
 }
 
 
