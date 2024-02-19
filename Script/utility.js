@@ -19,3 +19,7 @@ function addbackgroundcolour(elementId){
     const elementcolor= document.getElementById(elementId);
     elementcolor.classList.add('bg-orange-400');
 }
+function removebackgroundcolour(elementId){
+    const elementcolor= document.getElementById(elementId);
+    elementcolor.classList.remove('bg-orange-400');
+}
