@@ -70,6 +70,7 @@ function play(){
     ShowElementById('play-screen')
     // rest life
     setelementbyid('current-life',5)
+    setelementbyid('current-score',0)
     
     
     continuegame()
