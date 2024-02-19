@@ -23,3 +23,8 @@ function removebackgroundcolour(elementId){
     const elementcolor= document.getElementById(elementId);
     elementcolor.classList.remove('bg-orange-400');
 }
+function setelementbyid (elementId , value){
+    const element= document.getElementById(elementId);
+    element.innerText=value;
+     
+}

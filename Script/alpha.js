@@ -30,6 +30,10 @@ function handlekeyboardbuttonpressed(event){
         console.log(currentlife);
         const newlife=currentlife-1;
         currentlifeelement.innerText=newlife;
+        if(newlife==0){
+            gameover();
+
+        }
     }
 }
 document.addEventListener('keyup',handlekeyboardbuttonpressed)
@@ -49,12 +53,21 @@ function continuegame(){
     addbackgroundcolour(alphabet)
 
 }
+function gameover(){
+ HideElementByid('play-screen')
+ ShowElementById('score')
+}
 
 
 
 
 function play(){
     HideElementByid('home-screen')
-    ShowElementById('play-screen');
+    HideElementByid('score')
+    ShowElementById('play-screen')
+    // rest life
+    setelementbyid('current-life',5)
+    
+    
     continuegame()
 }
